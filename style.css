@@ -22,7 +22,7 @@ body {
     font-weight: bold;
 
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
     text-shadow:
     0 0 10px rgba(255,255,255,0.5),
@@ -41,10 +41,25 @@ body {
     padding: 20px;
 }
 
+.redes {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
 .botoes { 
     display: flex; 
     justify-content: center; 
     gap: 20px; 
+}
+
+.consoles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: auto;
 }
 
 button {
@@ -89,6 +104,10 @@ button:hover {
     0 0 40px rgba(0,140,255,0.3);
 }
 
+.img-c {
+border-radius: 1px;
+}
+
 img {
     width: 150px;
     height: 150px;
@@ -116,6 +135,9 @@ a {
     color: inherit;
 }
 
+.title h1 {
+    margin: 0;
+}
 .copyright {
     text-align: center;
 
@@ -130,6 +152,52 @@ a {
     line-height: 1.7;
 
     color: rgba(255,255,255,0.7);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+
+    max-width: 900px;
+
+    margin: 0 auto 20px auto;
+
+    padding: 10px 20px;
+
+    line-height: 1.7;
+
+    color: rgba(255,255,255,0.7);
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pesquisa input {
+    width: 400px;
+    max-width: 80%;
+
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 16px;
+
+    outline: none;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.pesquisa input::placeholder {
+    color: rgba(0,140,255,0.6);
 }
 
 @media (max-width: 768px) {
