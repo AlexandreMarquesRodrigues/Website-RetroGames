@@ -1,0 +1,79 @@
+body {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("bg.png");
+    background-size: cover;      /* Faz cobrir toda a tela */
+    background-position: center; /* Centraliza */
+    background-repeat: no-repeat;/* Evita repetir */
+    background-attachment: fixed;/* Fundo fixo ao rolar */
+
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* permite quebrar linha */
+    gap: 20px;
+
+    max-width: 700px; /* largura máxima da área */
+    margin: 0 auto;   /* centraliza */
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background: white;
+
+    transition: 0.3s;
+    cursor: pointer;
+    
+    width: 200px;
+    height: 200px;
+}
+
+button:hover {
+    background: blue;
+    color: white;
+    transform: scale(1.05);
+
+}
+
+img {
+    width: 150px;
+    border: auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
