@@ -244,5 +244,36 @@ const gamesDatabase = [
     page: "ogames.html",
     link: "https://gam.onl/snes/mega-man-x.html",
     search: "megaman megaman x snes super nintendo entertainment system platformer megaman"
+},
+{
+    title: "Pokémon Fire Red",
+    page: "ogames.html",
+    link: "https://gam.onl/gba/pokemon-firered-version-play-online.html",
+    image: "https://cdn2.steamgriddb.com/icon_thumb/8103eb779f2cfed843b1b71c6a1b350a.png",
+    search: "pokemon fire red pkr gba gamefreak rpg"
+},
+
+{
+    title: "Pokémon Emerald",
+    page: "ogames.html",
+    link: "https://gam.onl/gba/pokemon-emerald-version-play-online.html",
+    image: "https://cdn2.steamgriddb.com/icon_thumb/f6aacf266d86ca416e772e122b784f78.png",
+    search: "pokemon emerald pke gba gamefreak rpg"
+},
+
+{
+    title: "The Legend of Zelda: Ocarina of Time",
+    page: "ogames.html",
+    link: "https://gam.onl/n64/legend-of-zelda-ocarina-of-time-play-online.html",
+    image: "https://cdn2.steamgriddb.com/icon_thumb/3b939e9df1da04be8663c0fee2562c59.png",
+    search: "the legend of zelda ocarina of time nintendo 64 n64 rpg"
+},
+
+{
+    title: "Super Mario World",
+    page: "ogames.html",
+    link: "https://gam.onl/snes/super-mario-world-play-online.html",
+    image: "https://cdn2.steamgriddb.com/icon_thumb/8fcbbfa30f0dd6586eae1ad000385394.png",
+    search: "super mario world smw snes super nintendo platformer"
 }
 ];
