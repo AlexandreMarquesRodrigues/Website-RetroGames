@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RetroGamesWeb - Console Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="title">
+    <h1 id="titulo">🎮 Console Games!</h1>
+</div>
+
+<br><br>
+
+<div class="botoes-2" id="gamesContainer"></div>
+
+<script src="games.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const consoleName = params.get("console");
+
+const titulo = document.getElementById("titulo");
+
+titulo.innerText =
+"🎮 " + consoleName.toUpperCase() + " Games!";
+
+const container = document.getElementById("gamesContainer");
+
+const jogosFiltrados = gamesDatabase.filter(game =>
+game.console === consoleName
+);
+
+if(jogosFiltrados.length > 0) {
+
+    jogosFiltrados.forEach(game => {
+
+    container.innerHTML += `
+    <a href="${game.link}">
+        <button>
+
+            <img src="${game.image}" alt="">
+
+            ${game.title}
+
+        </button>
+    </a>
+    `;
+
+});
+
+} else {
+
+    container.innerHTML = `
+    <h2 style="color: white;">
+        Nenhum jogo encontrado.
+    </h2>
+    `;
+
+}
+
+</script>
+
+<div class="botoes" style="text-align: center;">
+    <a href="index.html">
+        <button style="width: 200px; height: 50px;">
+            Back
+        </button>
+    </a>
+</div>
+
+
+</body>
+</html>
