@@ -351,7 +351,7 @@ const gamesDatabase = [
 },
 
 {
-    title: "Megaman X",
+    title: "Megaman X (SNES)",
     console: "snes",
     page: "ogames.html",
     link: "https://gam.onl/snes/mega-man-x.html",
@@ -360,7 +360,7 @@ const gamesDatabase = [
 },
 
 {
-    title: "Pokémon Fire Red",
+    title: "Pokémon Fire Red (GBA)",
     console: "gba",
     page: "ogames.html",
     link: "https://gam.onl/gba/pokemon-firered-version-play-online.html",
@@ -369,7 +369,7 @@ const gamesDatabase = [
 },
 
 {
-    title: "Pokémon Emerald",
+    title: "Pokémon Emerald (GBA)",
     console: "gba",
     page: "ogames.html",
     link: "https://gam.onl/gba/pokemon-emerald-version-play-online.html",
@@ -378,7 +378,7 @@ const gamesDatabase = [
 },
 
 {
-    title: "The Legend of Zelda: Ocarina of Time",
+    title: "The Legend of Zelda: Ocarina of Time (N64)",
     console: "n64",
     page: "ogames.html",
     link: "https://gam.onl/n64/legend-of-zelda-ocarina-of-time-play-online.html",
@@ -387,11 +387,20 @@ const gamesDatabase = [
 },
 
 {
-    title: "Super Mario World",
+    title: "Super Mario World (SNES)",
     console: "snes",
     page: "ogames.html",
     link: "https://gam.onl/snes/super-mario-world-play-online.html",
     image: "https://cdn2.steamgriddb.com/icon_thumb/8fcbbfa30f0dd6586eae1ad000385394.png",
     search: "super mario world smw snes super nintendo platformer"
+},
+
+{
+    title: "Mega Man 7 (SNES)",
+    console: "snes",
+    page: "ogames.html",
+    link: "https://gam.onl/snes/mega-man-7.html",
+    image: "https://cdn2.steamgriddb.com/icon/2869394af943aaf5ae2a505d2d76be95/32/256x256.png",
+    search: "megaman 7 mega man 7 snes super nintendo platform"
 }
 ];
