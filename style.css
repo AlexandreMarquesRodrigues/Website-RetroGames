@@ -316,7 +316,8 @@ a {
 }
 
 .btn-avaliar {
-    width: 100%;
+    width: 400px;
+    height: auto;
     padding: 12px;
     background-color: #4CAF50;
     color: white;

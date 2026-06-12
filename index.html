@@ -52,15 +52,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     };
 
+    document.querySelectorAll(".navbar a").forEach(botao => {
+
+    botao.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        const secao = this.dataset.section;
+
+        const elemento = document.getElementById(secao);
+
+        if (elemento) {
+            elemento.scrollIntoView({
+                behavior: "smooth"
+        });
+    }
+
+    });
+
+});
+
 });
 </script>
-<body>
+<body id="top">
     <nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#popular">Popular</a>
-    <a href="#platforms">Platforms</a>
-    <a href="#social">Social</a>
-    </nav>
+    <a href="#" data-section="top">Home</a>
+    <a href="#" data-section="popular">Popular</a>
+    <a href="#" data-section="platforms">Platforms</a>
+    <a href="#" data-section="social">Social</a>
+</nav>
 
     <header class="hero">
     <div class="title">
@@ -116,9 +136,9 @@ input.addEventListener("keydown", function(event) {
 button.addEventListener("click", pesquisar);
 </script>  
 
-    <div class="c-title">
-        <h1>Most Popular Games: </h1>
-    </div>
+    <div class="c-title" id="popular">
+    <h1>Most Popular Games:</h1>
+</div>
 
     <div class="botoes-2">
         <a href="https://gam.onl/psx/crash-team-racing.html"
@@ -151,9 +171,9 @@ button.addEventListener("click", pesquisar);
     </a>
     </div>
 
-    <div class="c-title">
-        <h1>Gaming Plataforms: </h1>
-    </div>
+    <div class="c-title" id="platforms">
+    <h1>Gaming Platforms:</h1>
+</div>
     <br>
 
     <div class="consoles">
@@ -323,9 +343,9 @@ button.addEventListener("click", pesquisar);
 
     <br>
 
-    <div class="c-title">
-        <h1>Social Medias: </h1>
-    </div>
+    <div class="c-title" id="social">
+    <h1>Social Medias:</h1>
+</div>
 
     <div class="redes">
         <a href="https://www.instagram.com/alex.marxz/">
